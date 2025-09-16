@@ -1,10 +1,12 @@
-# Prospera Super — Calculadora de Maturidade Comercial
+# Prospera Super — Calculadora de Maturidade Comercial (Fix)
 
-Projeto pronto para **Netlify** com **Vite + React + TypeScript + Tailwind + Recharts**.
-Node 20 já pinado no `netlify.toml` e `.nvmrc`.
+- Build: `vite build` (sem `tsc -b` no CI)
+- Node 20 fixado: `netlify.toml` + `.nvmrc`
+- Slider compatível com `defaultValue` (uncontrolled)
+- Badge aceita `variant`
 
-## Deploy (Netlify)
-- Conecte o repositório (build: `npm run build`, publish: `dist`), ou
+## Deploy
+- Conecte o repo na Netlify (build: `npm run build`, publish: `dist`) ou
 - Use Netlify CLI:
   ```bash
   npm i -g netlify-cli
