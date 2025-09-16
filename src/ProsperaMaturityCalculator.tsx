@@ -20,7 +20,7 @@ import {
 } from "recharts";
 
 /**
- * Prospera Super – Calculadora de Maturidade Comercial
+ * Prospera Super – Maturidade Digital no Comercial
  * Áreas: Vendas, Pré‑Vendas, Customer Success (CS)
  * Pilares: Estratégia, Dados, Ferramentas, Processos, Pessoas, Governança
  * Escala: 1 (iniciante) a 5 (líder)
@@ -243,7 +243,7 @@ export default function ProsperaMaturityCalculator() {
   return (
     <div className="p-6 max-w-6xl mx-auto space-y-6">
       <header className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold">Calculadora de Maturidade Comercial</h1>
+        <h1 className="text-3xl font-bold">Maturidade Digital no Comercial</h1>
         <p className="text-muted-foreground">Prospera Super • Avalie Vendas, Pré‑Vendas e Customer Success e receba um plano de ação.</p>
       </header>
 
@@ -331,10 +331,11 @@ export default function ProsperaMaturityCalculator() {
                   </div>
                   <div className="mt-3">
                     <Slider
-                      defaultValue={[answers[q.id] || 0]}
+                      value={[answers[q.id] || 0]}
                       min={0}
                       max={5}
                       step={1}
+                      className="pointer-events-auto relative z-10"
                       onValueChange={(v) => setAnswer(q.id, v[0] || 0)}
                     />
                     <div className="flex justify-between text-xs text-muted-foreground mt-1">
@@ -407,7 +408,7 @@ export default function ProsperaMaturityCalculator() {
       </Card>
 
       <footer className="text-center text-xs text-muted-foreground pb-8">
-        © {new Date().getFullYear()} Prospera Super – Calculadora de Maturidade Comercial
+        © {new Date().getFullYear()} Prospera Super – Maturidade Digital no Comercial
       </footer>
     </div>
   );
