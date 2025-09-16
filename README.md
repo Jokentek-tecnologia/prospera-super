@@ -1,14 +1,11 @@
 # Prospera Super — Calculadora de Maturidade Comercial
 
 Projeto pronto para **Netlify** com **Vite + React + TypeScript + Tailwind + Recharts**.
-
-## Scripts
-- `npm run dev` — modo desenvolvimento
-- `npm run build` — build de produção
-- `npm run preview` — serve o build localmente
+Node 20 já pinado no `netlify.toml` e `.nvmrc`.
 
 ## Deploy (Netlify)
-- Conecte o repositório ou use `netlify-cli`:
+- Conecte o repositório (build: `npm run build`, publish: `dist`), ou
+- Use Netlify CLI:
   ```bash
   npm i -g netlify-cli
   netlify init
